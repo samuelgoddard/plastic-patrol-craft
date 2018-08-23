@@ -1,0 +1,11 @@
+// ==========================================================================
+// Horizontal Rule Atom
+// ==========================================================================
+
+hr {
+    border-top: 1px solid palette(grey);
+    border-bottom: 0;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}

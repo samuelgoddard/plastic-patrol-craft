@@ -1,0 +1,25 @@
+.m-footer {
+    padding: spacing(20 0);
+    background: palette(primary);
+    color: white;
+
+    @include respond-to(medium) {
+        padding: spacing(50 0);
+    }
+
+    @include respond-to(xlarge) {
+        padding: spacing(90 0);
+    }
+}
+
+.m-footer__logo {
+    path: {
+        fill: white !important;
+        stroke: white !important;
+    }
+}
+
+.m-footer__logo-wrap {
+    display: block;
+    max-width: rem-calc(150);
+}

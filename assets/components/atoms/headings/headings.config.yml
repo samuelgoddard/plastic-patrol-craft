@@ -1,0 +1,19 @@
+title: "Headings"
+status: "ready"
+
+context:
+  headings:
+    -
+      message: Lorem ipsum dolor sit amet consecteteur adipicising elit aram
+      tag: h1
+    -
+      message: Lorem ipsum dolor sit amet consecteteur adipicising elit aram
+      tag: h2
+
+variants:
+  -
+    name: thin
+    context:
+      meta:
+        message: Thin Heading
+        modifier: h--thin

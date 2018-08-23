@@ -1,0 +1,8 @@
+title: "Blockquote"
+status: "ready"
+
+context:
+  blockquote:
+    message: Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+
+

@@ -1,0 +1,31 @@
+
+$colours-map: (
+  // Primary: (Orange)
+  'primary': (rgb(193, 120, 55)),
+  // Success Green
+  'success': (rgb(20, 196, 106)),
+  // Error Red
+  'error': (rgb(238, 76, 55)),
+  // Pure White
+  'white': (rgb(255, 255, 255)),
+  // Available
+  'available': (rgb(226, 189, 157)),
+  // Galleries
+  'galleries': (rgb(54, 92, 143)),
+  // Recreation
+  'recreation': (rgb(139, 158, 64)),
+  // Restaurants
+  'restaurants': (rgb(193, 120, 55)),
+  // Upcoming
+  'upcoming': (rgb(246, 235, 190)),
+  // Warning Yellow
+  'warning': (rgb(244, 173, 61)),
+  // Occupied
+  'occupied': (rgb(156, 179, 201)),
+  // Hotels
+  'hotels': (rgb(214, 182, 54)),
+  // Grey: Section divider background and dividing lines lines
+  'grey': (rgb(240, 240, 240)),
+  // Black
+  'black': (rgb(34, 34, 34)),
+);

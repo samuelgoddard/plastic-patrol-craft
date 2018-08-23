@@ -1,0 +1,19 @@
+title: "Burger"
+status: "ready"
+
+context:
+  burger:
+
+variants:
+  -
+    name: white
+    context:
+      burger:
+        message: Close
+        modifier: burger--white
+  -
+    name: active
+    context:
+      burger:
+        message: Close
+        modifier: is--active

@@ -1,0 +1,65 @@
+// ==========================================================================
+// Button Atom
+// ==========================================================================
+
+// Base btn styling
+.btn, input.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border-radius: rem-calc(2);
+    padding: spacing(5 0 5 0);
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: all ease 150ms;
+    font-size: ms(3);
+    letter-spacing: 8px;
+
+    @include link() {
+        transition: all ease-in-out 250ms;
+        color: palette(primary);
+    }
+
+    @include link-hover() {
+        .chevron {
+            animation-name: scrollChevrons;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            opacity: 0;
+
+            &:nth-of-type(2) {
+                animation-delay: 0.15s;
+            }
+            &:nth-of-type(3) {
+                animation-delay: 0.3s;
+            }
+            &:nth-of-type(4) {
+                animation-delay: 0.45s;
+            }
+        }
+    }
+
+    @include respond-to(large) {
+        font-size: ms(4);
+    }
+
+    .btn--light {
+        font-weight: 300;
+    }
+}
+
+// Modifier to change the default (inline) styling to block
+.btn--block {
+    display: block;
+}
+
+// White button modifier
+.btn--white {
+    @include link() {
+        color: white;
+    }
+
+    @include link-hover() {
+        color: white;
+    }
+}

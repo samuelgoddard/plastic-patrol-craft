@@ -1,0 +1,17 @@
+<header class="m-header">
+  <div class="wrapper">
+    <div class="g align-v-center">
+      <div class="g__col g__col-2 u-trim">
+        <h4 class="logo">Logo</h4>
+      </div>
+
+      <div class="g__col g__col-10 is--hidden is--visible@large">
+        <nav class="m-nav m-nav--horizontal u-text-right">
+            {% for item in header.navItems %}
+              <a href="{{ item.url }}" class="nav-item">{{ item.title }}</a>
+            {% endfor %}
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>

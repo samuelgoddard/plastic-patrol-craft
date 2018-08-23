@@ -1,0 +1,28 @@
+// ==========================================================================
+// Progress Atom
+// ==========================================================================
+
+.progress {
+    display: block;
+    width: 100%;
+    background: palette(black);
+    height: rem-calc(10);
+
+    &--available {
+        background: palette(primary);
+    }
+
+    &--upcoming {
+        background: palette(hotels);
+    }
+
+    &--occupied {
+        background: palette(galleries);
+    }
+}
+
+.progress-wrap {
+    display: block;
+    width: 100%;
+    background: palette(grey);
+}

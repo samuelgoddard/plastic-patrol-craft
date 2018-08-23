@@ -1,0 +1,67 @@
+// ==========================================================================
+// Scroll Down Atom
+// ==========================================================================
+.scroll-down {
+    .chevron {
+        animation-name: scrollChevrons;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        opacity: 0;
+
+        &:nth-of-type(2) {
+            animation-delay: 0.15s;
+        }
+        &:nth-of-type(3) {
+            animation-delay: 0.3s;
+        }
+        &:nth-of-type(4) {
+            animation-delay: 0.45s;
+        }
+    }
+}
+
+.mouse {
+    padding: spacing(9 13);
+    height: rem-calc(37);
+    border: 2px solid white;
+    border-radius: rem-calc(25);
+    box-sizing: content-box;
+    margin-bottom: spacing(10);
+}
+
+.scroller {
+    width: rem-calc(5);
+    height: rem-calc(5);
+    border-radius: 100%;
+    background-color: white;
+    opacity: 0;
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.scroll-right {
+    .chevron {
+        &:before {
+            transform: rotate(45deg);
+        }
+    }
+}
+
+@keyframes scroll {
+    0% { opacity: 0; }
+    50% { transform: translateY(30px); opacity: 1; }
+    100% { transform: translateY(30px); opacity: 0;}
+}
+
+@keyframes scrollChevrons {
+    0% { opacity: 0; }
+    50% { transform: translateY(10px); opacity: 1;}
+    100% { transform: translateY(10px); opacity: 0;}
+}
+
+@keyframes scrollChevronsRight {
+    0% { opacity: 0; }
+    50% { transform: translateX(10px); transform: rotate(-90deg); opacity: 1;}
+    100% { transform: translateX(10px); transform: rotate(-90deg); opacity: 0;}
+}

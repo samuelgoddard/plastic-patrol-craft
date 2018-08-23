@@ -1,0 +1,15 @@
+title: "Buttons"
+status: "ready"
+
+context:
+  btn:
+    message: Download
+    messageThin: Flyer
+
+variants:
+  -
+    name: white
+    context:
+      btn:
+        message: Button White
+        modifier: btn--white

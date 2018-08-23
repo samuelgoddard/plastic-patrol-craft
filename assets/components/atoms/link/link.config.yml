@@ -1,0 +1,28 @@
+title: "Links"
+status: "ready"
+
+context:
+  link:
+    message: This is a standard link item
+
+variants:
+  -
+    name: block
+    context:
+      link:
+        modifier: link--block
+        message: This is a display block link item
+
+  -
+    name: small
+    context:
+      link:
+        modifier: link--small
+        message: This is a small link
+
+  -
+    name: white
+    context:
+      link:
+        modifier: link--white
+        message: This is a white link

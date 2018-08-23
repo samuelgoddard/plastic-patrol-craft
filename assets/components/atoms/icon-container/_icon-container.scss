@@ -1,0 +1,78 @@
+// ==========================================================================
+// Icon Container Atom
+// ==========================================================================
+
+.icon-container {
+    display: inline-block;
+    background: none;
+    border-radius: 100%;
+    // transition: all ease 250ms;
+
+    width: rem-calc(40);
+    height: rem-calc(40);
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    @include link-hover() {
+        background: black;
+
+        .icon {
+            use {
+                fill: white;
+            }
+        }
+    }
+}
+
+.icon-container--white {
+    @include link-hover() {
+        background: white;
+
+        .icon {
+            use {
+                fill: palette(black);
+            }
+        }
+    }
+}
+
+.icon-container__fancyhover {
+    position: absolute;
+    top: 165px;
+    left: -100px;
+    transform: rotate(90deg);
+    opacity: 0;
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    font-weight: 500;
+    font-size: rem-calc(15);
+    letter-spacing: 1px;
+    // transition: all ease 250ms;
+
+    span {
+        border-bottom: rem-calc(2) solid palette(primary);
+        padding-bottom: rem-calc(3);
+    }
+
+    &:before {
+        content: ' ';
+        width: rem-calc(70);
+        height: rem-calc(2);
+        background: white;
+        margin-right: rem-calc(10);
+    }
+}
+
+.icon-container--fancyhover {
+    position: relative;
+
+    @include link-hover {
+        .icon-container__fancyhover {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

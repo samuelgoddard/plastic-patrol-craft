@@ -1,0 +1,68 @@
+###################
+# Dependencies
+###################
+/vendor/
+/node_modules/
+npm-debug.log
+.bundle/
+npm-debug.log
+
+###################
+# Craft
+###################
+/storage/backups/
+/storage/runtime/
+/storage/userphotos/
+/storage/import/
+/storage/resized/
+!/storage/logo/*
+/config/local/*
+
+###################
+# Build artefacts
+###################
+/web/dist/
+.sass-cache/
+/assets/styles/design/
+/assets/js/design/
+
+###################
+# Uploads
+###################
+/web/uploads/
+
+###################
+# Environment conf
+###################
+/.env
+/secrets.json
+
+
+###################
+# Backups
+###################
+*.bak
+
+###################
+# Editor
+###################
+*.sublime-project
+*.sublime-workspace
+.vscode/
+/.phpintel/
+.idea
+
+###################
+# Platform specific
+###################
+
+# OSX
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.bat
+*.ps1

@@ -1,0 +1,36 @@
+.m-nav {
+    display: block;
+    padding: spacing(10 0);
+}
+
+// Set the base styles for horizontal styled navigation
+%horizontal-base {
+    @include respond-to(medium) {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: flex-end;
+        flex-direction: row;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    // We modify nav item within this context as it's a better option
+    // than a atom-level modifier in this instance.
+    .nav-item {
+        @include respond-to(medium) {
+            justify-content: center;
+            text-align: center;
+            margin-left: spacing(10);
+        }
+
+        @include respond-to(xlarge) {
+            margin-left: spacing(35);
+        }
+    }
+}
+
+// Apply the basic horizontal styling defined above, by default the children do now fill the
+// width of the nav, this is nicer for navs with less content
+.m-nav--horizontal {
+    @extend %horizontal-base;
+}

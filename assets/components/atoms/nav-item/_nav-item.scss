@@ -1,0 +1,36 @@
+// ==========================================================================
+// Nav Item Atom
+// ==========================================================================
+
+.nav-item, .nav-item a {
+    @include link() {
+        color: palette(black);
+        font-size: ms(-2);
+        text-transform: uppercase;
+        font-weight: 300;
+        text-decoration: none;
+        // transition: all ease 150ms;
+        letter-spacing: 2.5px;
+
+        @include respond-to(xlarge) {
+            font-size: ms(0);
+        }
+    }
+
+    @include link-hover() {
+        font-style: italic;
+        color: palette(primary);
+    }
+}
+
+.nav-item.is--active a {
+    @include link() {
+        color: palette(primary);
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    @include link-hover() {
+        color: palette(primary);
+    }
+}

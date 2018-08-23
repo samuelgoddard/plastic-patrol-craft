@@ -1,0 +1,16 @@
+// ==========================================================================
+// Micro Atom
+// ==========================================================================
+
+.micro {
+    // Apply font styling to all elements within the callout
+    &, > p {
+        font-size: ms(-3);
+    }
+
+    // Trim the top spacing of the first child
+    > *:first-child {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}

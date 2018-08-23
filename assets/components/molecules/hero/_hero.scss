@@ -1,0 +1,31 @@
+.m-hero {
+    height: 100vh !important;
+    background: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @include respond-to(small) {
+        min-height: rem-calc(850);
+    }
+}
+
+.m-hero__logo {
+    stroke: white !important;
+    fill: white !important;
+    max-width: rem-calc(450);
+
+    @include respond-to(xxlarge) {
+        max-width: rem-calc(620);
+    }
+}
+
+.m-hero {
+    display: flex;
+    .wrapper {
+        align-items: center;
+    }
+}

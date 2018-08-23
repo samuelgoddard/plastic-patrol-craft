@@ -1,0 +1,26 @@
+title: "Meta"
+status: "ready"
+
+context:
+  meta:
+    message: Meta
+
+variants:
+  -
+    name: white
+    context:
+      meta:
+        message: Meta White
+        modifier: meta--white
+  -
+    name: italic
+    context:
+      meta:
+        message: Meta Italic
+        modifier: meta--italic
+  -
+    name: light
+    context:
+      meta:
+        message: Meta Light
+        modifier: meta--light

@@ -1,0 +1,18 @@
+// ==========================================================================
+// Blockquote Atom
+// ==========================================================================
+
+blockquote {
+    margin: spacing(25 0);
+    position: relative;
+    margin: 0 0 0.75em 0;
+    color: palette(black);
+    font-weight: 500;
+    font-size: rem-calc(20);
+    line-height: rem-calc(31);
+
+    @include respond-to(large) {
+        font-size: rem-calc(36);
+        line-height: rem-calc(46);
+    }
+}

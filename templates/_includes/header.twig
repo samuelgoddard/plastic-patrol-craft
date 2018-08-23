@@ -1,0 +1,17 @@
+{# Set the nav items from config #}
+{# {% set navItems = [] %}
+{% for navEntry in craft.app.config.general.nav %}
+    {% set navItems = navItems | merge([{
+        title: navEntry.title,
+        url: navEntry.url,
+        active: (navEntry.url | trim('#') == craft.app.request.segments|first),
+    }]) %}
+{% endfor %}
+
+{{ craft.app.request.segments|first }} #}
+
+<header class="m-header">
+  <div class="wrapper">
+    <h3>Header</h3>
+  </div>
+</header>

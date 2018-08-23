@@ -1,0 +1,19 @@
+.m-header {
+    padding: spacing(15 0);
+    background: palette(primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all ease 250ms;
+
+    @include respond-to(large) {
+        background: rgba(255,255,255,0.9);
+        padding: spacing(20 0);
+    }
+
+    @include respond-to(xlarge) {
+        padding: spacing(30 0);
+    }
+}

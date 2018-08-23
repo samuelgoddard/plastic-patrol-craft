@@ -1,0 +1,26 @@
+// ==========================================================================
+// Figure Atom
+// ==========================================================================
+
+figure {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.img--full {
+    width: 100%;
+}
+
+figcaption {
+    position: absolute;
+    top: spacing(10);
+    right: spacing(-10);
+    font-size: ms(-3);
+    color: rgba(0,0,0,0.75);
+    font-style: italic;
+
+    transform-origin: right top 0;
+    transform: rotate(-90deg);
+}

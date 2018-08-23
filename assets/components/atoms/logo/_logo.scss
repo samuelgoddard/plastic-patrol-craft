@@ -1,0 +1,22 @@
+// ==========================================================================
+// Logo Atom
+// ==========================================================================
+
+.logo {
+    color: white;
+    transition: all ease 200ms;
+    max-width: rem-calc(35);
+    display: block;
+
+    @include respond-to(large) {
+        color: palette(primary);
+    }
+}
+
+.m-header__logo {
+    fill: white;
+
+    @include respond-to(large) {
+        fill: palette(primary);
+    }
+}

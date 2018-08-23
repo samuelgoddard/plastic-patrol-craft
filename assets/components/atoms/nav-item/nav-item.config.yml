@@ -1,0 +1,14 @@
+title: "Nav Item"
+status: "ready"
+
+context:
+  navItem:
+    message: Example Nav Item
+
+variants:
+  -
+    name: active
+    context:
+      navItem:
+        message: Active Nav Item
+        modifier: is--active

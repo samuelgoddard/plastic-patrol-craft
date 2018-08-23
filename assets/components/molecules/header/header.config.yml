@@ -1,0 +1,11 @@
+title: "Header"
+
+context:
+  preview:
+    noPad: true
+
+  header:
+    navItems:
+    -
+      title: Home
+      url: /components/preview/home

@@ -1,0 +1,75 @@
+// ==========================================================================
+// Links Atom
+// ==========================================================================
+a,
+.link {
+    // Set nice text-decoration
+    text-decoration: underline;
+    text-decoration-skip: ink;
+
+    // Default link uses the primary palette
+    @include link() {
+        color: palette(primary);
+    }
+
+    @include link-hover() {
+        color: tint(palette(primary), "darken");
+    }
+
+    &:focus {
+        outline: 1px dotted palette("primary");
+    }
+
+    &:active {
+        outline: none;
+    }
+}
+
+// White link
+.link--white {
+    @include link() {
+        color: white;
+    }
+
+    @include link-hover() {
+        color: white;
+    }
+
+    &.link--fancy {
+        border-bottom: rem-calc(2) solid white;
+    }
+}
+
+// Remove all styling for a 'plain' modifier
+.link--plain {
+    text-decoration: none;
+    text-decoration-skip: none;
+
+    @include link-hover() {
+        color: currentColor;
+    }
+}
+
+.link--fancy {
+    text-decoration: none;
+    border-bottom: rem-calc(2) solid black;
+    padding-bottom: spacing(2);
+    font-weight: 900;
+}
+
+.link--black {
+    @include link() {
+        color: black;
+    }
+}
+
+// Block display modifier
+.link--block {
+    display: block;
+}
+
+.link--small {
+    @include link() {
+        font-size: rem-calc(14);
+    }
+}

@@ -1,0 +1,17 @@
+// ==========================================================================
+// Paragraph Atom
+// ==========================================================================
+
+p {
+    // All paragraphs have margin set in em's
+    margin: 0 0 1em 0;
+    padding: 0;
+    font-size: rem-calc(16);
+    line-height: rem-calc(30);
+    font-weight: 400;
+}
+
+p.small {
+    font-size: rem-calc(14);
+    line-height: 2;
+}

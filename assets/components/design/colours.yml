@@ -1,0 +1,48 @@
+---
+# @todo add masthead and standard design token intro
+global:
+  category: 'Visual'
+  type: 'color'
+props:
+  black:
+    value: '#222222'
+    comment: 'Black'
+  white:
+    value: '#FFFFFF'
+    comment: 'Pure White'
+  grey:
+    value: '#F0F0F0'
+    comment: 'Grey: Section divider background and dividing lines lines'
+  primary:
+    value: '#C17837'
+    comment: 'Primary: (Orange)'
+  success:
+    value: '#14C46A'
+    comment: 'Success Green'
+  warning:
+    value: '#f4ad3d'
+    comment: 'Warning Yellow'
+  error:
+    value: '#ee4c37'
+    comment: 'Error Red'
+  restaurants:
+    value: '#C17837'
+    comment: 'Restaurants'
+  galleries:
+    value: '#365C8F'
+    comment: 'Galleries'
+  recreation:
+    value: '#8B9E40'
+    comment: 'Recreation'
+  hotels:
+    value: '#D6B636'
+    comment: 'Hotels'
+  available:
+    value: '#E2BD9D'
+    comment: 'Available'
+  upcoming:
+    value: '#9CB3C9'
+    comment: 'Upcoming'
+  upcoming:
+    value: '#F6EBBE'
+    comment: 'Upcoming'
