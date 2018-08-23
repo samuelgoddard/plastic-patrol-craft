@@ -29,7 +29,7 @@ One time setup
 git flow init 
 
 # Add local DNS alias
-nanobox dns add local riverbend.craft.localdev
+nanobox dns add local plastic-patrol.craft.localdev
 nanobox run
 
 # Run from inside the server
